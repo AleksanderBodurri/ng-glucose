@@ -1,6 +1,6 @@
 {
   "name": "ng-glucose",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular lifecycle hooks as decorators",
   "license": "MIT",
   "repository": {

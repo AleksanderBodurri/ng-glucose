@@ -1,3 +1,7 @@
+# NgGlucose
+
+Angular lifecycle hooks as decorators. Compatible with Angular 9+.
+
 ## Usage
 
 ```typescript

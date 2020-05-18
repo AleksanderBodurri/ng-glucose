@@ -1,7 +1,3 @@
-# NgGlucose
-
-A collection of decorators that patch into Angular lifecycles.
-
 ## Installation
 
 ```shell
