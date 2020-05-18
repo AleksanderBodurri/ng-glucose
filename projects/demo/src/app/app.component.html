@@ -1,0 +1,13 @@
+<div>
+  Open Console
+</div>
+<br />
+<div>
+  <button (click)="addItem()">
+    Add Item
+  </button>
+</div>
+<div *ngFor="let item of list">
+  <app-list-item [item]="item"></app-list-item>
+  <button (click)="delete(item.id)">Delete</button>
+</div>

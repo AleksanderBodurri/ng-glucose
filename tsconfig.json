@@ -11,15 +11,9 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "lib": ["es2018", "dom"],
     "paths": {
-      "ng-glucose": [
-        "dist/ng-glucose/ng-glucose",
-        "dist/ng-glucose"
-      ]
+      "ng-glucose": ["projects/ng-glucose/src/public-api.ts"]
     }
   },
   "angularCompilerOptions": {

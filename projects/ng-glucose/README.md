@@ -1,24 +1,56 @@
 # NgGlucose
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+A collection of decorators that patch into Angular lifecycles.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name --project ng-glucose` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-glucose`.
-> Note: Don't forget to add `--project ng-glucose` or else it will be added to the default project in your `angular.json` file. 
+```shell
+npm i ng-glucose --save
+```
 
-## Build
+## Usage
 
-Run `ng build ng-glucose` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Example
+
+```typescript
+import { Directive, ElementRef } from "@angular/core";
+import { NgOnInit } from "ng-glucose";
+
+@Directive({
+  selector: "[appColor]",
+})
+export class ColourDirective {
+  constructor(private el: ElementRef) {}
+
+  @NgOnInit()
+  private _setBackgroundColour(): void {
+    this.el.nativeElement.style.backgroundColor = "black";
+  }
+
+  @NgOnInit()
+  private _setFontColour(): void {
+    this.el.nativeElement.style.color = "white";
+  }
+}
+```
+
+### Angular Lifecycle Decorators
+
+| Lifecycle             |      Interface      |                Method |   ng-glucose decorator |
+| --------------------- | :-----------------: | --------------------: | ---------------------: |
+| On Changes            |      OnChanges      |           ngOnChanges |           @NgOnChanges |
+| On Init               |       OnInit        |              ngOnInit |              @NgOnInit |
+| Do Check              |       DoCheck       |             ngDoCheck |             @NgDoCheck |
+| After Content Init    |  AfterContentInit   |    ngAfterContentInit |    @NgAfterContentInit |
+| After Content Checked | AfterContentChecked | ngAfterContentChecked | @NgAfterContentChecked |
+| After View Init       |    AfterViewInit    |       ngAfterViewInit |       @NgAfterViewInit |
+| After View Checked    |  AfterViewChecked   |    ngAfterViewChecked |    @NgAfterViewChecked |
+| On Destroy            |      OnDestroy      |           ngOnDestroy |           @NgOnDestroy |
 
 ## Publishing
 
 After building your library with `ng build ng-glucose`, go to the dist folder `cd dist/ng-glucose` and run `npm publish`.
 
-## Running unit tests
+## License
 
-Run `ng test ng-glucose` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+MIT

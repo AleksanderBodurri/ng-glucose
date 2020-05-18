@@ -1,9 +1,26 @@
 {
   "name": "ng-glucose",
   "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/AleksanderBodurri/ng-glucose"
+  },
+  "author": {
+    "name": "Aleksander Bodurri"
+  },
+  "bugs": {
+    "url": "https://github.com/AleksanderBodurri/ng-glucose/issues"
+  },
+  "keywords": [
+    "Angular",
+    "Angular 9",
+    "lifecycle",
+    "glucose",
+    "ng-glucose"
+  ],
   "peerDependencies": {
-    "@angular/common": "^9.1.7",
-    "@angular/core": "^9.1.7",
+    "@angular/common": "^9.0.0 | ^9.1.0",
+    "@angular/core": "^9.0.0 | ^9.1.0",
     "tslib": "^1.10.0"
   }
 }
