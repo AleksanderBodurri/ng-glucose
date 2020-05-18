@@ -1,16 +1,4 @@
-# NgGlucose
-
-A collection of decorators that patch into Angular lifecycles.
-
-## Installation
-
-```shell
-npm i ng-glucose --save
-```
-
 ## Usage
-
-### Example
 
 ```typescript
 import { Directive, ElementRef } from "@angular/core";
@@ -46,10 +34,6 @@ export class ColourDirective {
 | After View Init       |    AfterViewInit    |       ngAfterViewInit |       @NgAfterViewInit |
 | After View Checked    |  AfterViewChecked   |    ngAfterViewChecked |    @NgAfterViewChecked |
 | On Destroy            |      OnDestroy      |           ngOnDestroy |           @NgOnDestroy |
-
-## Publishing
-
-After building your library with `ng build ng-glucose`, go to the dist folder `cd dist/ng-glucose` and run `npm publish`.
 
 ## License
 
