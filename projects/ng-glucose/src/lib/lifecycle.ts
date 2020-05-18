@@ -41,7 +41,7 @@ const lifecycleDecoratorFor = (lifecycle: string) => {
         };
       } else {
         console.error(
-          'ng-sugar lifecycle decorators cannot be applied to methods inside non-angular classes'
+          'ng-glucose lifecycle decorators cannot be applied to methods inside non-angular classes'
         );
       }
     };
