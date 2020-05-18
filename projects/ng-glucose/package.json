@@ -1,13 +1,12 @@
 {
   "name": "ng-glucose",
   "version": "0.0.1",
+  "description": "Angular lifecycle hooks as decorators",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/AleksanderBodurri/ng-glucose"
   },
-  "author": {
-    "name": "Aleksander Bodurri"
-  },
+  "author": "AleksanderBodurri",
   "bugs": {
     "url": "https://github.com/AleksanderBodurri/ng-glucose/issues"
   },
